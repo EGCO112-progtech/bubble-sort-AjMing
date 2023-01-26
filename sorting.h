@@ -26,7 +26,7 @@ void insertion(int a[],int n){
 
 }
 
-inline void swap(int *a,int *b){
+void swap(int *a,int *b){
  int temp;
   temp=*a;
   *a=*b;
