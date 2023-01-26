@@ -12,13 +12,12 @@ int main(int argc,char **argv) {
     for(i=0;i<n;i++){
         a[i]=atoi(argv[i+1]);
     }
-
-   display(a,N);
-  bubbleSort(a,N); 
+ display(a,n);
+  bubbleSort(a,n);
    //insertion(a,N);
 
   // selectionSort(a,N);
-  display(a,N);
+   display(a,n);
  return 0;
 }
 
