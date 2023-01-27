@@ -1,7 +1,6 @@
 // selection sort function module in C
 
 void display(int a[],int n){
-
     int i;
 
     for(i=0;i<n;i++)

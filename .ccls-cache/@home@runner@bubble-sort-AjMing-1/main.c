@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 #include "sorting.h"
-
 int main(int argc,char **argv) {
     int *a;//[N]={3,2,6,7,3,1};
     int n=argc-1;
@@ -17,6 +16,7 @@ int main(int argc,char **argv) {
            j++;
           }
     }
+  
   n=j;
   if(n==0) printf("No prime\n");
   else{
