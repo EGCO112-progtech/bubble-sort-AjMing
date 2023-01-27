@@ -4,7 +4,7 @@ void display(int a[],int n){
     int i;
 
     for(i=0;i<n;i++)
-        printf("%-5d",a[i]);
+        printf("%5d",a[i]);
     printf("\n");
   
 }
@@ -67,7 +67,7 @@ for(j=1;j<=n-1;j++){
         }
       display(a,n);
     }
-    if(sorted==0)break;
+    //if(sorted==0)break;
 
  }
   

@@ -20,7 +20,6 @@ int main(int argc,char **argv) {
   n=j;
   if(n==0) printf("No prime\n");
   else{
-    printf("\n");
  display(prime,n);
   bubbleSort(prime,n);
    //insertion(a,N);
