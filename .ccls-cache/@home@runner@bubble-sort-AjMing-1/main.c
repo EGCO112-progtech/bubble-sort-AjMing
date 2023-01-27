@@ -12,7 +12,7 @@ int main(int argc,char **argv) {
     for(i=0;i<n;i++){
         a[i]=atoi(argv[i+1]);
         if(Isprime(a[i])) {
-           prime[j]=a[i];
+           prime[j]=a[i];aq              
            j++;
           }
     }

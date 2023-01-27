@@ -8,6 +8,7 @@ void display(int a[],int n){
     printf("\n");
   
 }
+
 int Isprime(int x){
    int i,n=0;
   
