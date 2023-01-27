@@ -65,10 +65,10 @@ for(j=1;j<=n-1;j++){
             swap(&a[i],&a[i+1]);
             sorted=0;
         }
-        
+      display(a,n);
     }
-    if(sorted)break;
-  display(a,n);
+    if(sorted==0)break;
+
  }
   
 }
