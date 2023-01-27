@@ -8,16 +8,25 @@ int main(int argc,char **argv) {
     int *a;//[N]={3,2,6,7,3,1};
     int n=argc-1;
     a=(int*)malloc(sizeof(int)*n);
-  int i,j,new_number;
+   int *prime=(int*)malloc(sizeof(int)*n);
+  int i,j=0;
     for(i=0;i<n;i++){
         a[i]=atoi(argv[i+1]);
+        if(Isprime(a[i])) {
+           prime[j]=a[i];
+           j++;
+          }
     }
- display(a,n);
-  bubbleSort(a,n);
+  n=j;
+  if(n==0) printf("No prime\n");
+  else{
+ display(prime,n);
+  bubbleSort(prime,n);
    //insertion(a,N);
 
   // selectionSort(a,N);
-   display(a,n);
+   display(prime,n);
+    }
  return 0;
 }
 

@@ -9,12 +9,39 @@ void display(int a[],int n){
     printf("\n");
   
 }
+int Isprime(int x){
+   int i,n=0;
+  
+    for(i=1;i<=x;i++){
+       if(x%i==0) n++;
+    }
+  if(n==2) return 1;
+  return 0;
+  
+}
+
+void swap(int *a,int *b){
+ int temp;
+  temp=*a;
+  *a=*b;
+  *b=temp;
+  
+}
 
 void selectionSort(int data[], int length) 
 { 
 	int i, j, m, mi; 
-	
-     display(data,length);
+	for (i = 0; i < length - 1; i++) 
+	{ 
+	   /* find the minimum */ 
+	   mi = i; 
+	   for (j = i+1; j < length; j++) 
+	   { 
+	      if (data[j] < data[mi]) { mi = j; } 
+	   } 
+	   swap(&data[i],&data[mi]);
+	} 
+
      
 	
 } 
@@ -24,14 +51,6 @@ void selectionSort(int data[], int length)
 void insertion(int a[],int n){
 
 
-}
-
-void swap(int *a,int *b){
- int temp;
-  temp=*a;
-  *a=*b;
-  *b=temp;
-  
 }
 
 void bubbleSort(int a[],int n){
